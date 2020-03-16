@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yatay Menu</title>
+    
+    <style>
+        body{
+            
+        }
+        
+        li a{
+            text-decoration: none;
+            color: white;
+            display: block;
+            min-width: 140px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background: #2f3036;
+        }
+        li a:hover{
+            background-color: #19c589;
+        }
+        li{
+            display: inline-block;
+            float: left;
+            margin-right: 1px;
+            
+        }
+        ul{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            position: absolute;
+        }
+        
+        li:hover ul a{
+            background: #f3f3f3;
+            color: black;
+            height: 40px;
+            line-height: 40px;
+            display: block;
+            
+        }
+        li:hover ul a:hover{
+            background-color: #19c589;
+            color: #fff;
+        }
+        li ul li{
+            display: block;
+            float: none;
+        }
+        li ul li a{
+            text-align: left;
+            min-width: 100px;
+            padding: 0 20px;
+        }
+        li ul{
+            display: none;
+        }
+        ul li a:hover +.hidden,.hidden:hover
+        {
+            display: block;
+        }
+        li:hover a{
+            background: #19c589;
+        }
+        
+    
+    </style>
+    
+    
+    
+    
+</head>
+<body>
+   
+   <ul>
+       <li class="list">
+           <a href="#">Anasayfa</a>
+       </li>
+       <li class="list">
+           <a href="#">Hakkımızda</a>
+       </li>
+       <li class="list">
+           <a href="#">Kurslar</a>
+           <ul class="hidden">
+               <li><a href="" class="dropdown">Komple Uygulamalı Web Geliştirme Eğitimi</a></li>
+               <li><a href="" class="dropdown">Web Programlama Eğitimi : Asp.net MVC</a></li>
+               <li><a href="" class="dropdown">C# Programlama Dili Eğitimi</a></li>
+           </ul>
+           
+       </li>
+       <li class="list">
+           <a href="#">Makale</a>
+       </li>
+       <li class="list">
+           <a href="#">Iletişim</a>
+       </li>
+
+   </ul>
+   
+    
+</body>
+</html>
